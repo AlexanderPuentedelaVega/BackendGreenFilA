@@ -67,6 +67,7 @@ builder.Services.AddScoped<IModelo3DService, Modelo3DService>();
 builder.Services.AddTransient<CanjeProductoService>();
 builder.Services.AddScoped<IDetallePedidoService, DetallePedidoService>();
 builder.Services.AddScoped<IModeloPremiumService, ModeloPremiumService>();
+builder.Services.AddScoped<IModeloStlService, ModeloStlService>();
 
 builder.Services.AddControllers(); // Aseg�rate de incluir los controladores
 builder.Services.AddDbContext<GreenfilContext>(options =>
