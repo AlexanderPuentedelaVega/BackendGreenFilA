@@ -1,5 +1,64 @@
-bin/
-obj/
-/packages/
-riderModule.iml
-/_ReSharper.Caches/
+# Visual Studio
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+*.log
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+# Project.lock.json (deprecated)
+project.lock.json
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# Rider
+.idea/
+
+# dotCover
+*.dotCover
+
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+
+# TFS
+$tf/
+
+# Database
+*.mdf
+*.ldf
+
+# Others
+*.dbmdl
+*.bak
+*.backup
+
+# Azure Function
+.local.settings.json
+
+# Docker
+**/Dockerfile
+**/docker-compose*
+
+# Logs
+*.log
+*.tlog
+
+# Publish output
+publish/
+AppPackages/

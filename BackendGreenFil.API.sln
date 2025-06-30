@@ -1,5 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35919.96 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackendGreenFil.API", "BackendGreenFil.API\BackendGreenFil.API.csproj", "{F07F0AC1-FB29-4552-A286-220E91B32F1B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenFil.Application", "GreenFil.Application\GreenFil.Application.csproj", "{74CCEAF7-8D1D-438D-B3DF-CCF6748F711D}"
@@ -7,6 +10,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenFil.Domain", "GreenFil.Domain\GreenFil.Domain.csproj", "{98C8FB68-3612-4195-9866-41462A445C59}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenFil.Infrastructure", "GreenFil.Infrastructure\GreenFil.Infrastructure.csproj", "{2F20A9EA-66CC-4F28-82B0-8B12BC695064}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,5 +38,11 @@ Global
 		{2F20A9EA-66CC-4F28-82B0-8B12BC695064}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F20A9EA-66CC-4F28-82B0-8B12BC695064}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F20A9EA-66CC-4F28-82B0-8B12BC695064}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7A1C7BCE-CD4D-4A3E-A471-6F30114BC538}
 	EndGlobalSection
 EndGlobal
