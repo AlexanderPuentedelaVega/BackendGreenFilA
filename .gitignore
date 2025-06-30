@@ -1,64 +1,37 @@
-# Visual Studio
-.vs/
-.vscode/
-*.user
+## Compiled binaries
+bin/
+obj/
+
+## Rider / JetBrains IDE
+.idea/
+*.sln.iml
+
+## Visual Studio
 *.suo
+*.user
 *.userosscache
 *.sln.docstates
+.vscode/
 
-# Build results
-[Bb]in/
-[Oo]bj/
-[Ll]og/
+## Logs and database
 *.log
+*.db
+*.pdb
 
-# NuGet
+## Build results
+*.dll
+*.exe
+
+## Secrets
+*.env
+secrets.json
+appsettings.Development.json  # si tiene datos sensibles
+
+## NuGet packages
 *.nupkg
-*.snupkg
 packages/
-# Project.lock.json (deprecated)
-project.lock.json
-# ASP.NET Scaffolding
-ScaffoldingReadMe.txt
+*.snupkg
 
-# Resharper
-_ReSharper*/
-*.[Rr]e[Ss]harper
-
-# Rider
-.idea/
-
-# dotCover
-*.dotCover
-
-# Visual Studio profiler
-*.psess
-*.vsp
-*.vspx
-
-# TFS
-$tf/
-
-# Database
-*.mdf
-*.ldf
-
-# Others
-*.dbmdl
-*.bak
-*.backup
-
-# Azure Function
-.local.settings.json
-
-# Docker
-**/Dockerfile
-**/docker-compose*
-
-# Logs
-*.log
-*.tlog
-
-# Publish output
-publish/
-AppPackages/
+## Others
+Thumbs.db
+.DS_Store
