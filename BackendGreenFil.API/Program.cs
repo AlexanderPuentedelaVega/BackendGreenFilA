@@ -63,7 +63,7 @@ builder.Services.AddScoped<UsuarioService>();
 builder.Services.AddScoped<IJwtService, JwtService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-
+builder.Services.AddScoped<IModelo3DService, Modelo3DService>();
 builder.Services.AddTransient<CanjeProductoService>();
 builder.Services.AddScoped<IDetallePedidoService, DetallePedidoService>();
 
