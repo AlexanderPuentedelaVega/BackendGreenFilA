@@ -7,7 +7,14 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.5"/>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.5" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\GreenFil.Application\GreenFil.Application.csproj" />
+      <ProjectReference Include="..\GreenFil.Domain\GreenFil.Domain.csproj" />
+      <ProjectReference Include="..\GreenFil.Infrastructure\GreenFil.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>
