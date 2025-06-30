@@ -10,7 +10,7 @@ using GreenFil.Infrastructure.UnitOfWork;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// --- JWT CONFIGURACIÓN DE AUTENTICACIÓN ---
+// --- JWT CONFIGURACIï¿½N DE AUTENTICACIï¿½N ---
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -31,7 +31,7 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
-// --- JWT CONFIGURACIÓN DE SWAGGER CON BEARER TOKEN ---
+// --- JWT CONFIGURACIï¿½N DE SWAGGER CON BEARER TOKEN ---
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -64,7 +64,10 @@ builder.Services.AddScoped<IJwtService, JwtService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
-builder.Services.AddControllers(); // Asegúrate de incluir los controladores
+builder.Services.AddTransient<CanjeProductoService>();
+builder.Services.AddScoped<IDetallePedidoService, DetallePedidoService>();
+
+builder.Services.AddControllers(); // Asegï¿½rate de incluir los controladores
 builder.Services.AddDbContext<GreenfilContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
@@ -82,7 +85,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-// JWT: activar autenticación y autorización
+// JWT: activar autenticaciï¿½n y autorizaciï¿½n
 app.UseAuthentication();
 app.UseAuthorization();
 

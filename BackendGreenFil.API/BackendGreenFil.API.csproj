@@ -18,4 +18,8 @@
       <ProjectReference Include="..\GreenFil.Infrastructure\GreenFil.Infrastructure.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="DTOs\" />
+    </ItemGroup>
+
 </Project>
